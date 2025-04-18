@@ -8,7 +8,7 @@ Lightweight C# unit test framework + runner. Built for a university course on C#
 - **MiniTestRunner**:  
   Discovers/runs tests from DLLs.
 
-## Quick Start
+## How To Run It
 1. **Write Tests**:
 ```csharp
 [TestClass]
