@@ -1,0 +1,10 @@
+test4: celem testu jest sprawdzenie działania funkcji P1Z29_MKO_integral2D
+przy wielomianie 2-argumentowym 3 stopnia
+f(x, y) = p(10)*x^3 + p(9)*x^2y + p(8)*xy^2 + p(7)*y^3 + p(6)*x^2 + ...
+... + p(5)*xy + p(4)*y^2 + p(3)*x + p(2)*y + p(1)
+na obszarze [a, b] x [c, d], gdzie:
+p - 10 losowych liczb z przedziału [-5, 5]
+[a, b], [c, d]- losowe przedziały zawierające się w [-5, 5]
+test losuje współczynniki oraz przedziały, a także liczy analityczną
+wartość całki, po czym porównuje ją z wynikami P1Z29_MKO_integral2D dla
+różnych n1 i n2

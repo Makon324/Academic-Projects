@@ -1,0 +1,26 @@
+Celem testu jest zbadanie złożoności metody Milne’a, w której pierwsze 
+współczynniki są obliczane za pomocą metody Gilla. Analizowane są zarówno 
+dokładność rozwiązania, jak i czas obliczeń w zależności od liczby punktów 
+podziału (N).
+
+Opis problemu:
+- Rozważane równanie różniczkowe o postaci:
+  y'' - y = 0
+- na przedziale [0, 1]
+- przy warunkach początkowych y(0) = 1 oraz y'(0) = 0
+
+
+Przebieg testu:
+- Rozwiązanie numeryczne uzyskiwane jest za pomocą metody Milne'a 
+  (zaimplementowanej w funkcji `P2Z40_MKO_milne`).
+- Dokładność rozwiązania oceniana jest przez porównanie wyników metody
+  z dokładnym rozwiązaniem analitycznym - cosh(x).
+- Liczba podprzedziałów zaczyna się od N = 1 i jest sukcesywnie 
+  podwajana, dopuki N < 1e6.
+
+Wyjście testu:
+- Dla każdej wartości N wyświetlane są:
+  1. Liczba punktów podziału (N).
+  2. Maksymalny błąd globalny względem rozwiązania analitycznego (cosh(x)).
+  3. Czas obliczeń (w sekundach).
+

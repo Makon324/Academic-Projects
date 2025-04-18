@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "K:\\Projekty\\academic projects\\Gra\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|k:\\projekty\\academic projects\\gra\\gra\\chain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|solutionrelative:gra\\chain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|k:\\projekty\\academic projects\\gra\\gra\\mapbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|solutionrelative:gra\\mapbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|k:\\projekty\\academic projects\\gra\\gra\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|solutionrelative:gra\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|k:\\projekty\\academic projects\\gra\\gra\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|solutionrelative:gra\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|k:\\projekty\\academic projects\\gra\\gra\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|solutionrelative:gra\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|k:\\projekty\\academic projects\\gra\\gra\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|solutionrelative:gra\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|k:\\projekty\\academic projects\\gra\\gra\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|solutionrelative:gra\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|k:\\projekty\\academic projects\\gra\\gra\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|solutionrelative:gra\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|k:\\projekty\\academic projects\\gra\\gra\\renderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|solutionrelative:gra\\renderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|k:\\projekty\\academic projects\\gra\\gra\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|solutionrelative:gra\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|k:\\projekty\\academic projects\\gra\\gra\\effects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|solutionrelative:gra\\effects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|k:\\projekty\\academic projects\\gra\\gra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C52A2C-30C4-41F3-9C4B-7A6D83F34501}|Gra\\Gra.csproj|solutionrelative:gra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Chain.cs",
+              "DocumentMoniker": "K:\\Projekty\\academic projects\\Gra\\Gra\\Chain.cs",
+              "RelativeDocumentMoniker": "Gra\\Chain.cs",
+              "ToolTip": "K:\\Projekty\\academic projects\\Gra\\Gra\\Chain.cs",
+              "RelativeToolTip": "Gra\\Chain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T19:30:08.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Potion.cs",
+              "DocumentMoniker": "K:\\Projekty\\academic projects\\Gra\\Gra\\Potion.cs",
+              "RelativeDocumentMoniker": "Gra\\Potion.cs",
+              "ToolTip": "K:\\Projekty\\academic projects\\Gra\\Gra\\Potion.cs",
+              "RelativeToolTip": "Gra\\Potion.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwHIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T18:15:42.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "K:\\Projekty\\academic projects\\Gra\\Gra\\Enemy.cs",
+              "RelativeDocumentMoniker": "Gra\\Enemy.cs",
+              "ToolTip": "K:\\Projekty\\academic projects\\Gra\\Gra\\Enemy.cs",
+              "RelativeToolTip": "Gra\\Enemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T21:28:12.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Player.cs",
+              "DocumentMoniker": "K:\\Projekty\\academic projects\\Gra\\Gra\\Player.cs",
+              "RelativeDocumentMoniker": "Gra\\Player.cs",
+              "ToolTip": "K:\\Projekty\\academic projects\\Gra\\Gra\\Player.cs",
+              "RelativeToolTip": "Gra\\Player.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAowIIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T20:06:14.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Renderer.cs",
+              "DocumentMoniker": "K:\\Projekty\\academic projects\\Gra\\Gra\\Renderer.cs",
+              "RelativeDocumentMoniker": "Gra\\Renderer.cs",
+              "ToolTip": "K:\\Projekty\\academic projects\\Gra\\Gra\\Renderer.cs",
+              "RelativeToolTip": "Gra\\Renderer.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAADwv0oAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T18:30:04.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "map.cs",
+              "DocumentMoniker": "K:\\Projekty\\academic projects\\Gra\\Gra\\map.cs",
+              "RelativeDocumentMoniker": "Gra\\map.cs",
+              "ToolTip": "K:\\Projekty\\academic projects\\Gra\\Gra\\map.cs",
+              "RelativeToolTip": "Gra\\map.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T21:04:20.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MapBuilder.cs",
+              "DocumentMoniker": "K:\\Projekty\\academic projects\\Gra\\Gra\\MapBuilder.cs",
+              "RelativeDocumentMoniker": "Gra\\MapBuilder.cs",
+              "ToolTip": "K:\\Projekty\\academic projects\\Gra\\Gra\\MapBuilder.cs",
+              "RelativeToolTip": "Gra\\MapBuilder.cs",
+              "ViewState": "AgIAAGQBAAAAAAAAAAAswHYBAAC2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:21:27.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "item.cs",
+              "DocumentMoniker": "K:\\Projekty\\academic projects\\Gra\\Gra\\item.cs",
+              "RelativeDocumentMoniker": "Gra\\item.cs",
+              "ToolTip": "K:\\Projekty\\academic projects\\Gra\\Gra\\item.cs",
+              "RelativeToolTip": "Gra\\item.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAuwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T21:04:31.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Effects.cs",
+              "DocumentMoniker": "K:\\Projekty\\academic projects\\Gra\\Gra\\Effects.cs",
+              "RelativeDocumentMoniker": "Gra\\Effects.cs",
+              "ToolTip": "K:\\Projekty\\academic projects\\Gra\\Gra\\Effects.cs",
+              "RelativeToolTip": "Gra\\Effects.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAuwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T11:47:35.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Game.cs",
+              "DocumentMoniker": "K:\\Projekty\\academic projects\\Gra\\Gra\\Game.cs",
+              "RelativeDocumentMoniker": "Gra\\Game.cs",
+              "ToolTip": "K:\\Projekty\\academic projects\\Gra\\Gra\\Game.cs",
+              "RelativeToolTip": "Gra\\Game.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowEEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T19:10:49.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Currency.cs",
+              "DocumentMoniker": "K:\\Projekty\\academic projects\\Gra\\Gra\\Currency.cs",
+              "RelativeDocumentMoniker": "Gra\\Currency.cs",
+              "ToolTip": "K:\\Projekty\\academic projects\\Gra\\Gra\\Currency.cs",
+              "RelativeToolTip": "Gra\\Currency.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T22:35:19.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "K:\\Projekty\\academic projects\\Gra\\Gra\\Program.cs",
+              "RelativeDocumentMoniker": "Gra\\Program.cs",
+              "ToolTip": "K:\\Projekty\\academic projects\\Gra\\Gra\\Program.cs",
+              "RelativeToolTip": "Gra\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T18:45:02.563Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

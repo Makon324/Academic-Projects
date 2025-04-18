@@ -1,0 +1,6 @@
+numtest2: celem testu jest sprawdzenie działania złożonych 2 punktowych
+kwadratur Gaussa-Legendre'a przy obliczaniu funkcji nieregulej
+na obszarze [0, 1] x [0, 1]
+a konkretnie funkcji złożonej z 100 losowych funkcji stałych
+test losuje współczynniki funkcji stałych, a także liczy wartości
+analityczne oraz wyniki kwadratury dla różnych n1 i n2 i je porównuje

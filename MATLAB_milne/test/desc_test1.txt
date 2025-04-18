@@ -1,0 +1,19 @@
+Celem testu jest zbadanie poprawności działania funkcji przy
+rozwiązywaniu równania różniczkowego drugiego rzędu.
+
+Opis problemu:
+- Rozważane równanie różniczkowe o postaci:
+  y'' - y = 0
+- Na przedziale [0, 1]
+- Przy warunkach początkowych y(0) = 1 oraz y'(0) = 0
+- Dla ilości podprzedziałów N = 1000
+
+Przebieg testu:
+- Rozwiązanie numeryczne uzyskiwane jest za pomocą funkcji P2Z40_MKO_milne.
+- Dokładność rozwiązania oceniana jest przez porównanie wyników funkcji 
+  z dokładnym rozwiązaniem analitycznym – cosh(x).
+
+Wyjście testu:
+- Wyświetlane są:
+  1. Błąd globalny całego rozwiązania.
+  2. Błędy metody Gilla i Milne'a

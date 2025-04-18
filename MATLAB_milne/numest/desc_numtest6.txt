@@ -1,0 +1,22 @@
+Celem testu jest zbadanie, jak dokładność metody numerycznej zmienia się w 
+zależności od liczby punktów podziału (N) w przypadku, gdy współczynnik a2 
+w równaniu różniczkowym jest bardzo bliski 0 w pewnym punkcie.
+
+Opis problemu:
+- Rozważamy równanie różniczkowe o postaci:
+  ((x - 0.5)^2 + 1e-10)y'' + 1e-10y = -(x - 0.5)^2 * sin(x)
+- na przedziale [0, 1]
+- przy warunkach początkowych y(0) = 0 oraz y'(0) = 1
+
+Przebieg testu:
+- Rozwiązanie numeryczne uzyskiwane jest za pomocą metody Milne'a 
+  (zaimplementowanej w funkcji `P2Z40_MKO_milne`).
+- Dokładność rozwiązania jest oceniana przez porównanie wyników metody
+  z dokładnym rozwiązaniem numerycznym - sin(x).
+- Liczba punktów podziału N jest sukcesywnie podwajana, 
+  zaczynając od N = 3, dopuki N < 1e6.
+
+Wyjście testu:
+- Dla każdej wartości N wyświetlane są:
+  1. Liczba punktów podziału (N).
+  2. Błąd globalny pomiędzy rozwiązaniem numerycznym i analitycznym.

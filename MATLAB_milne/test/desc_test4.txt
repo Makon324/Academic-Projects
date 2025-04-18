@@ -1,0 +1,20 @@
+Celem testu jest zbadanie poprawności działania funkcji przy
+rozwiązywaniu równania różniczkowego drugiego rzędu, gdzie wynik
+ma asymptotę.
+
+Opis problemu:
+- Rozważane równanie różniczkowe o postaci:
+  y'' + x^2y' + xy = 2 / (x^3)
+- Na przedziale [0.01, 1]
+- Przy warunkach początkowych y(0) = 100 oraz y'(0) = -10000
+- Dla ilości podprzedziałów N = 2000
+
+Przebieg testu:
+- Rozwiązanie numeryczne uzyskiwane jest za pomocą funkcji P2Z40_MKO_milne.
+- Dokładność rozwiązania oceniana jest przez porównanie wyników funkcji 
+  z dokładnym rozwiązaniem analitycznym – 1/x.
+
+Wyjście testu:
+- Wyświetlane są:
+  1. Błąd globalny całego rozwiązania.
+  2. Błędy metody Gilla i Milne'a

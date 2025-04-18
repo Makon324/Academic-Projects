@@ -1,0 +1,24 @@
+Celem testu jest zbadanie, jak metoda Milne'a sprawdza się w przypadku, 
+gdy rozwiązaniem równania różniczkowego jest funkcja szybko oscylująca.
+
+Opis problemu:
+- Rozważamy równanie różniczkowe o postaci:
+  y'' + a0 * y = 0
+- Na przedziale [0, 1]
+- Przy warunkach początkowych y(0) = 1 oraz y'(0) = 0
+- Dla ilości podprzedziałów N = 10000
+
+Przebieg testu:
+- Współczynniki równania są zadane w postaci:
+  a(x) = {a0, 0, 1}, gdzie a0 jest wartością zmienianą w trakcie testu.
+- Rozwiązanie numeryczne uzyskiwane jest za pomocą metody Milne'a 
+  (zaimplementowanej w funkcji `P2Z40_MKO_milne`).
+- Dokładność rozwiązania oceniana jest przez porównanie wyników metody
+  z dokładnym rozwiązaniem analitycznym: y_exact = cos(sqrt(a0) * x).
+- Współczynnik a0 jest sukcesywnie podwajany, zaczynając od a0 = 1000, 
+  aż do wartości a0 < 1e7.
+
+Wyjście testu:
+- Dla każdej wartości a0 wyświetlane są:
+  1. Współczynnik a0.
+  2. Błąd globalny pomiędzy rozwiązaniem numerycznym i analitycznym.

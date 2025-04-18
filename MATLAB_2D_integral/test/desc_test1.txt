@@ -1,0 +1,8 @@
+test1: celem testu jest sprawdzenie działania funkcji P1Z29_MKO_integral2D
+przy obliczaniu funkcji stałej.
+f(x, y) = p0, na obszarze [a, b] x [c, d], gdzie:
+-> p0 - losowa liczba z przedziału [-5 do 5]
+-> [a, b], [c, d] - losowe przedziały zawierające się w [-5, 5]
+test losuje wartość funkcji oraz przedziały, a także liczy analityczną
+wartość całki, po czym porównuje ją z wynikami P1Z29_MKO_integral2D dla
+różnych n1 i n2

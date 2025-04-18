@@ -1,0 +1,24 @@
+Celem testu jest zbadanie, jak bardzo błąd numeryczny metody Milne'a wzrasta 
+w przypadku równania różniczkowego, którego rozwiązanie posiada asymptotę.
+
+Opis problemu:
+- Rozważamy równanie różniczkowe o postaci:
+  y'' + x^2 * y' + x * y = 2 / x^3
+- na przedziale [x0, 1], gdzie x0 jest sukcesywnie zmniejszane.
+- Warunki początkowe są wyrażone jako:
+  y(x0) = 1/x0 oraz y'(x0) = -1/(x0^2)
+- Dla ilości podprzedziałów N = 10000
+
+Przebieg testu:
+- Rozwiązanie numeryczne uzyskiwane jest za pomocą metody Milne'a 
+  (zaimplementowanej w funkcji `P2Z40_MKO_milne`).
+- Dokładność rozwiązania oceniana jest przez porównanie wyników metody
+  z dokładnym rozwiązaniem analitycznym: y_exact = 1/x.
+- Punkt początkowy x0 jest sukcesywnie zmniejszany, zaczynając od 
+x0 = 0.01, dupuki x0 > 1e-5.
+
+Wyjście testu:
+- Dla każdej wartości x0 wyświetlane są:
+  1. Punkt początkowy (x0).
+  2. Błąd globalny pomiędzy rozwiązaniem numerycznym i analitycznym.
+

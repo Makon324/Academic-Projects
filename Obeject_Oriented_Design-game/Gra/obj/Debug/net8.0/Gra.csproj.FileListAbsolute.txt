@@ -1,0 +1,29 @@
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\bin\Debug\net8.0\Gra.exe
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\bin\Debug\net8.0\Gra.deps.json
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\bin\Debug\net8.0\Gra.runtimeconfig.json
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\bin\Debug\net8.0\Gra.dll
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\bin\Debug\net8.0\Gra.pdb
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\obj\Debug\net8.0\Gra.GeneratedMSBuildEditorConfig.editorconfig
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\obj\Debug\net8.0\Gra.AssemblyInfoInputs.cache
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\obj\Debug\net8.0\Gra.AssemblyInfo.cs
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\obj\Debug\net8.0\Gra.csproj.CoreCompileInputs.cache
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\obj\Debug\net8.0\Gra.dll
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\obj\Debug\net8.0\refint\Gra.dll
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\obj\Debug\net8.0\Gra.pdb
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\obj\Debug\net8.0\Gra.genruntimeconfig.cache
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\obj\Debug\net8.0\ref\Gra.dll
+K:\Studia\SemIV\ProjOb\ProjOb_25L_01189135_Project\Gra\Gra\obj\Debug\net8.0\Gra.sourcelink.json
+K:\Projekty\academic projects\Gra\Gra\bin\Debug\net8.0\Gra.exe
+K:\Projekty\academic projects\Gra\Gra\bin\Debug\net8.0\Gra.deps.json
+K:\Projekty\academic projects\Gra\Gra\bin\Debug\net8.0\Gra.runtimeconfig.json
+K:\Projekty\academic projects\Gra\Gra\bin\Debug\net8.0\Gra.dll
+K:\Projekty\academic projects\Gra\Gra\bin\Debug\net8.0\Gra.pdb
+K:\Projekty\academic projects\Gra\Gra\obj\Debug\net8.0\Gra.GeneratedMSBuildEditorConfig.editorconfig
+K:\Projekty\academic projects\Gra\Gra\obj\Debug\net8.0\Gra.AssemblyInfoInputs.cache
+K:\Projekty\academic projects\Gra\Gra\obj\Debug\net8.0\Gra.AssemblyInfo.cs
+K:\Projekty\academic projects\Gra\Gra\obj\Debug\net8.0\Gra.csproj.CoreCompileInputs.cache
+K:\Projekty\academic projects\Gra\Gra\obj\Debug\net8.0\Gra.dll
+K:\Projekty\academic projects\Gra\Gra\obj\Debug\net8.0\refint\Gra.dll
+K:\Projekty\academic projects\Gra\Gra\obj\Debug\net8.0\Gra.pdb
+K:\Projekty\academic projects\Gra\Gra\obj\Debug\net8.0\Gra.genruntimeconfig.cache
+K:\Projekty\academic projects\Gra\Gra\obj\Debug\net8.0\ref\Gra.dll

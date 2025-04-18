@@ -1,0 +1,5 @@
+numtest2: celem testu jest sprawdzenie działania złożonych 2 punktowych
+kwadratur Gaussa-Legendre'a przy obliczaniu ciężko przybliżalnych 
+wielomianem niskiego stopnia na obszarze [0, 1] x [0, 1].
+test dla każdej z trzech wybranych funkcji liczy wartości analityczne
+oraz wyniki kwadratury dla różnych n1 i n2 i je porównuje

@@ -1,0 +1,32 @@
+Celem testu jest zbadanie, w jaki sposób błędy obliczeń pierwszych 
+wartości za pomocą metody Gilla wpływają na dokładność całego rozwiązania.
+
+Opis problemu:
+- Rozważamy równanie różniczkowe o postaci:
+  y'' - y = 0
+- na przedziale [0, 1]
+- przy warunkach początkowych y(0) = 1 oraz y'(0) = 0
+- Dla ilości podprzedziałów N = 10000
+
+Przebieg testu:
+- Pierwsze cztery punkty rozwiązania są obliczane za pomocą metody Gilla.
+- Wyniki porównywane są z rozwiązaniem analitycznym:
+  y = cosh(x), y' = sinh(x)
+- Do rozwiązań analitycznych dodawany jest uprzednio obliczony błąd, 
+  podzielony przez specjalny parametr err_div.
+- Po obliczeniu pierwszych punktów metodą, całe rozwiązanie jest 
+  kontynuowane metodą Milne'a.
+- Parametr err_div jest sukcesywnie podwajany, zaczynając od err_div = 1,
+  dopuki err_div < 1e5.
+- Dodatkowo, na końcu, przeprowadzana jest symulacja dla przypadku 
+  idealnych wartości początkowych (bez błędów w pierwszych czterech 
+  punktach).
+
+Wyjście testu:
+- Dla każdej wartości err_div wyświetlane są:
+  1. Wartość parametru err_div.
+  2. Błąd globalny całego rozwiązania.
+  3. Błąd globalny w pierwszych czterech punktach obliczonych metodą Gilla.
+  4. Błąd globalny w pozostałych punktach obliczonych metodą Milne'a.
+- Na końcu testu podawany jest wynik dla przypadku, gdy w pierwszych
+  krokach nie występuje żaden błąd.

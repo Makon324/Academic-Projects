@@ -1,0 +1,1 @@
+This repository contains my contributions to a **university group project** developing a PyTorch-based neural network to detect pneumonia in X-ray images ([main project](https://github.com/ramszaj513/Pneumonia-Detection-/tree/main)).

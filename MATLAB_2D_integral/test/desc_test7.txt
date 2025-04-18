@@ -1,0 +1,6 @@
+test7: celem testu jest sprawdzenie działania funkcji P1Z29_MKO_integral2D
+w przypadku gdy przedział ma długość 0
+weźmy losową funkcję 2 argumentową f, oraz obliczmy jej podwójną całkę na
+takich obszarach, jak wiemy wyniki powinny zawsze wyjść 0
+test losuje przedziały, n1 i n2, oraz wylicza całkę używając
+P1Z29_MKO_integral2D i porównuje wynik z 0

@@ -1,0 +1,5 @@
+numtest1: celem testu jest sprawdzenie działania złożonych 2 punktowych
+kwadratur Gaussa-Legendre'a przy obliczaniu funkcji z nieosobliwościami
+na obszarze [0, 1] x [0, 1]
+test liczy wartości analityczne oraz wyniki kwadratury dla
+różnych n1 i n2 i je porównuje

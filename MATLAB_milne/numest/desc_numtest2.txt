@@ -1,0 +1,26 @@
+Celem testu jest zbadanie, jak liczba iteracji predyktora w metodzie
+Milne'a wpływa na dokładność rozwiązania oraz czas obliczeń.
+
+Opis problemu:
+- Rozważamy równanie różniczkowe o postaci:
+  y'' - y = 0
+- na przedziale [0, 1]
+- przy warunkach początkowych y(0) = 1 oraz y'(0) = 0
+
+Przebieg testu:
+- Testy przeprowadzane są dla dwóch różnych wartości liczby 
+  podprzedziałów (N): N = 10 oraz N = 500.
+- Dokładność rozwiązania oceniana jest przez porównanie wyników metody
+  z dokładnym rozwiązaniem analitycznym - cosh(x).
+- Liczba iteracji predyktora (m) zaczyna się od m = 1 i jest sukcesywnie 
+  podwajana, dopuki m < 1e3.
+- Dla każdej kombinacji (N, m) rozwiązanie jest obliczane za pomocą 
+  metody Milne'a (zaimplementowanej w funkcji `P2Z40_MKO_milne`).
+
+Wyjście testu:
+- Dla każdej wartości (N, m) wyświetlane są:
+  1. Liczba podprzedziałów (N).
+  2. Liczba iteracji predyktora (m).
+  3. Błąd globalny względem rozwiązania analitycznego.
+  4. Czas obliczeń (w sekundach).
+
