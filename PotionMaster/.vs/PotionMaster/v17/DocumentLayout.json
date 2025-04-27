@@ -1,0 +1,233 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|k:\\studia\\semiv\\proggraf\\pwsg_25l_01189135_winforms-lab2\\potionmaster\\potionmaster\\vialcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|solutionrelative:potionmaster\\vialcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|k:\\studia\\semiv\\proggraf\\pwsg_25l_01189135_winforms-lab2\\potionmaster\\potionmaster\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|solutionrelative:potionmaster\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|k:\\studia\\semiv\\proggraf\\pwsg_25l_01189135_winforms-lab2\\potionmaster\\potionmaster\\vialcontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|solutionrelative:potionmaster\\vialcontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\potionmaster\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|solutionrelative:potionmaster\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|k:\\studia\\semiv\\proggraf\\pwsg_25l_01189135_winforms-lab2\\potionmaster\\potionmaster\\settingsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|solutionrelative:potionmaster\\settingsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|k:\\studia\\semiv\\proggraf\\pwsg_25l_01189135_winforms-lab2\\potionmaster\\potionmaster\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|solutionrelative:potionmaster\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|k:\\studia\\semiv\\proggraf\\pwsg_25l_01189135_winforms-lab2\\potionmaster\\potionmaster\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|solutionrelative:potionmaster\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\potionmaster\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|solutionrelative:potionmaster\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|k:\\studia\\semiv\\proggraf\\pwsg_25l_01189135_winforms-lab2\\potionmaster\\potionmaster\\theme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|solutionrelative:potionmaster\\theme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|k:\\studia\\semiv\\proggraf\\pwsg_25l_01189135_winforms-lab2\\potionmaster\\potionmaster\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|solutionrelative:potionmaster\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\potionmaster\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|solutionrelative:potionmaster\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|k:\\studia\\semiv\\proggraf\\pwsg_25l_01189135_winforms-lab2\\potionmaster\\potionmaster\\potionmaster.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|solutionrelative:potionmaster\\potionmaster.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\potionmaster\\vialcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0F56AA70-E732-4BE4-BC96-F867FF13B3F6}|PotionMaster\\PotionMaster.csproj|solutionrelative:potionmaster\\vialcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SettingsForm.cs [Design]",
+              "DocumentMoniker": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\SettingsForm.cs",
+              "RelativeDocumentMoniker": "PotionMaster\\SettingsForm.cs",
+              "ToolTip": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\SettingsForm.cs [Design]",
+              "RelativeToolTip": "PotionMaster\\SettingsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T22:14:51.706Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PotionMaster",
+              "DocumentMoniker": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\PotionMaster.csproj",
+              "RelativeDocumentMoniker": "PotionMaster\\PotionMaster.csproj",
+              "ToolTip": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\PotionMaster.csproj",
+              "RelativeToolTip": "PotionMaster\\PotionMaster.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-19T22:06:27.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VialControl.cs",
+              "DocumentMoniker": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\VialControl.cs",
+              "RelativeDocumentMoniker": "PotionMaster\\VialControl.cs",
+              "ToolTip": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\VialControl.cs",
+              "RelativeToolTip": "PotionMaster\\VialControl.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAiwG4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T14:58:46.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VialControl.Designer.cs",
+              "DocumentMoniker": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\VialControl.Designer.cs",
+              "RelativeDocumentMoniker": "PotionMaster\\VialControl.Designer.cs",
+              "ToolTip": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\VialControl.Designer.cs",
+              "RelativeToolTip": "PotionMaster\\VialControl.Designer.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvyQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T14:57:54.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\Form1.cs",
+              "RelativeDocumentMoniker": "PotionMaster\\Form1.cs",
+              "ToolTip": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\Form1.cs",
+              "RelativeToolTip": "PotionMaster\\Form1.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T14:39:23.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\Form1.cs",
+              "RelativeDocumentMoniker": "PotionMaster\\Form1.cs",
+              "ToolTip": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\Form1.cs [Design]",
+              "RelativeToolTip": "PotionMaster\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T14:27:39.752Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SettingsForm.Designer.cs",
+              "DocumentMoniker": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\SettingsForm.Designer.cs",
+              "RelativeDocumentMoniker": "PotionMaster\\SettingsForm.Designer.cs",
+              "ToolTip": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\SettingsForm.Designer.cs",
+              "RelativeToolTip": "PotionMaster\\SettingsForm.Designer.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAjwD4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T22:15:31.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SettingsForm.cs",
+              "DocumentMoniker": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\SettingsForm.cs",
+              "RelativeDocumentMoniker": "PotionMaster\\SettingsForm.cs",
+              "ToolTip": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\SettingsForm.cs",
+              "RelativeToolTip": "PotionMaster\\SettingsForm.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T22:15:10.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Theme.cs",
+              "DocumentMoniker": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\Theme.cs",
+              "RelativeDocumentMoniker": "PotionMaster\\Theme.cs",
+              "ToolTip": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\Theme.cs",
+              "RelativeToolTip": "PotionMaster\\Theme.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAwEYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T23:38:41.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "PotionMaster\\Form1.Designer.cs",
+              "ToolTip": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\Form1.Designer.cs",
+              "RelativeToolTip": "PotionMaster\\Form1.Designer.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAjwHgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T12:59:37.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Settings.Designer.cs",
+              "DocumentMoniker": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\Properties\\Settings.Designer.cs",
+              "RelativeDocumentMoniker": "PotionMaster\\Properties\\Settings.Designer.cs",
+              "ToolTip": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\Properties\\Settings.Designer.cs",
+              "RelativeToolTip": "PotionMaster\\Properties\\Settings.Designer.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T12:44:22.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "PotionMaster\\Properties\\Settings.settings",
+              "ToolTip": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\Properties\\Settings.settings",
+              "RelativeToolTip": "PotionMaster\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2025-04-19T22:06:53.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "VialControl.cs [Design]",
+              "DocumentMoniker": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\VialControl.cs",
+              "RelativeDocumentMoniker": "PotionMaster\\VialControl.cs",
+              "ToolTip": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\VialControl.cs [Design]",
+              "RelativeToolTip": "PotionMaster\\VialControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T15:12:45.005Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
