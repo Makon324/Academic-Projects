@@ -1,4 +1,4 @@
-# C-Zaawansowany-Kalkulator
+# C-advanced-calculator
 
 This project is an advanced calculator program written in C, developed as part of my first-semester university studies in Poland in late 2023. It was designed to demonstrate skills in C programming and computational logic as required by the course. The code comments and project documentation are written entirely in Polish.
 
