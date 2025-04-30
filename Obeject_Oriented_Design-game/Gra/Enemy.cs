@@ -8,11 +8,28 @@ namespace Gra
 {
     class Enemy : Entity
     {
-        string name;
+        private string name;
+        public int LifePoints { get; private set; }
+        public int AttackValue { get; }
+        public int Armor { get; }
 
-        public Enemy(int _X = 0, int _Y = 0, string _name = "Enemy") : base(_X, _Y)
+        public Enemy(int _X = 0, int _Y = 0, string _name = "Enemy", int lifePoints = 50, int attackValue = 30, int armor = 5) : base(_X, _Y)
         {
             name = _name;
+            LifePoints = lifePoints;
+            AttackValue = attackValue;
+            Armor = armor;
+        }
+
+        public void RemoveFromBoard(Map map)
+        {
+            map.RemoveEnemy(getX, getY);
+        }
+
+        public void TakeDamage(int damage)
+        {
+            int effective = Math.Max(0, damage - Armor);
+            LifePoints -= effective;
         }
 
         public string getName()

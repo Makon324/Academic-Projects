@@ -53,13 +53,15 @@ namespace Gra
         private void BuildInputHandlerChain()
         {
             var moveHandler = new MoveHandler();
+            var combatHandler = new CombatHandler();
             var pickupHandler = new PickupHandler();
             var inventorySelectHandler = new InventorySelectHandler();
             var dropAllHandler = new DropAllHandler();
             var exitHandler = new ExitHandler();
             var invalidHandler = new InvalidInputHandler();
 
-            moveHandler.SetNext(pickupHandler)
+            moveHandler.SetNext(combatHandler)
+                       .SetNext(pickupHandler)
                        .SetNext(inventorySelectHandler)
                        .SetNext(dropAllHandler)
                        .SetNext(exitHandler)

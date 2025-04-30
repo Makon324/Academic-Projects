@@ -32,7 +32,7 @@ namespace Gra
             {
                 return false;
             }
-        }
+        }        
 
         public virtual (char, ConsoleColor) Render()
         {
@@ -260,6 +260,7 @@ namespace Gra
             Renderer.Instance.LogAction("Dropped all items!");
         }
 
+
         // Constructor
         public Player(int _X = 0 , int _Y = 0, Dictionary<PlayerAttributes, int>? _attributes = null) : base(_X, _Y)
         {
@@ -267,12 +268,12 @@ namespace Gra
             if(_attributes == null)
             {
                 attributes = new Dictionary<PlayerAttributes, int> {
-                    { PlayerAttributes.strength, 100},
-                    { PlayerAttributes.dexterity, 100},
-                    { PlayerAttributes.health, 100},
-                    { PlayerAttributes.luck, 100},
-                    { PlayerAttributes.aggression, 100},
-                    { PlayerAttributes.wisdom, 100}
+                    { PlayerAttributes.strength, 10 },
+                    { PlayerAttributes.dexterity, 10 },
+                    { PlayerAttributes.health, 100 },
+                    { PlayerAttributes.luck, 5 },
+                    { PlayerAttributes.aggression, 5 },
+                    { PlayerAttributes.wisdom, 5 }
                 };
             }
             else

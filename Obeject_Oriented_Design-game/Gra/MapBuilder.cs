@@ -227,7 +227,7 @@ namespace Gra
 
         private IWeapon GenerateRandomWeapon()
         {
-            string[] weapons = { "Dagger", "Sword", "Axe", "Bow", "Greatsword", "Mace", "Warhammer" };
+            string[] weapons = { "Dagger", "Sword", "Axe", "Bow", "Greatsword", "Mace", "Warhammer", "Staff", "Wand" };
             string name = weapons[random.Next(weapons.Length)];
 
             int damage = name switch
@@ -238,12 +238,20 @@ namespace Gra
                 "Greatsword" => random.Next(15, 25),
                 "Bow" => random.Next(8, 12),
                 "Mace" => random.Next(10, 13),
-                "Warhammer" => random.Next(10, 20)
+                "Warhammer" => random.Next(10, 20),
+                "Staff" => random.Next(10, 18),
+                "Wand" => random.Next(8, 15),
+                _ => 10
             };
 
-            bool twoHanded = random.Next(4) == 0; // 25% two handed
+            bool twoHanded = random.Next(4) == 0;
 
-            return new Weapon(name, damage, twoHanded);
+            if (new[] { "Greatsword", "Warhammer", "Axe", "Mace" }.Contains(name))
+                return new HeavyWeapon(name, damage, twoHanded);
+            else if (new[] { "Dagger", "Sword", "Bow" }.Contains(name))
+                return new LightWeapon(name, damage, twoHanded);
+            else // "Staff" or "Wand"
+                return new MagicWeapon(name, damage, twoHanded);
         }
 
         public void AddItems(double chance = 0.1)
@@ -380,7 +388,7 @@ namespace Gra
             }
 
             if (enemiesOnMap)
-                instructionLines.Add("Enemies nearby! Be careful!!!");
+                instructionLines.Add($"Use: {KeyBindings.NormalAttack}/{KeyBindings.StealthAttack}/{KeyBindings.MagicAttack} to attack enemy!");
 
             instructionLines.Add($"Exit: {KeyBindings.Exit}");
             return instructionLines;

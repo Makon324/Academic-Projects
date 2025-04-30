@@ -21,6 +21,9 @@ namespace Gra
         public int modifyPlayerAttribute(PlayerAttributes A, int i);
 
         public (char, ConsoleColor) Render();
+
+        public virtual int Accept(AttackVisitor visitor) => visitor.Visit(this);
+        public virtual int AcceptDefense(DefenseVisitor visitor) => visitor.Visit(this);
     }
 
     class Item : IItem
@@ -31,7 +34,7 @@ namespace Gra
 
         public bool isTwoHanded { get => twoHanded; }
 
-        public string getName() { return name; }
+        public virtual string getName() { return name; }
 
         public Item(string _name, bool _isTwoHanded = false)
         {
@@ -60,6 +63,9 @@ namespace Gra
         {
             return getName();
         }
+
+        public virtual int Accept(AttackVisitor visitor) => visitor.Visit(this);
+        public virtual int AcceptDefense(DefenseVisitor visitor) => visitor.Visit(this);
     }
 
     interface IWeapon : IItem
@@ -71,7 +77,7 @@ namespace Gra
     {
         private int damage;
 
-        public virtual int getDamage() { return damage; }
+        public virtual int getDamage() { return damage; }        
 
         public Weapon(string _name, int _damage = 10, bool _isTwoHanded = false) : base(_name, _isTwoHanded)
         {
@@ -86,8 +92,39 @@ namespace Gra
         }
     }
 
+    class HeavyWeapon : Weapon
+    {
+        public HeavyWeapon(string _name, int _damage = 10, bool _isTwoHanded = false) : base(_name, _damage, _isTwoHanded) { }
+        public override int Accept(AttackVisitor visitor) => visitor.Visit(this);
+        public override int AcceptDefense(DefenseVisitor visitor) => visitor.Visit(this);
+        public override string getName()
+        {
+            return base.getName() + " (Heavy)";
+        }
+    }
 
-   
+    class LightWeapon : Weapon
+    {
+        public LightWeapon(string _name, int _damage = 10, bool _isTwoHanded = false) : base(_name, _damage, _isTwoHanded) { }
+        public override int Accept(AttackVisitor visitor) => visitor.Visit(this);
+        public override int AcceptDefense(DefenseVisitor visitor) => visitor.Visit(this);
+        public override string getName()
+        {
+            return base.getName() + " (Light)";
+        }
+    }
+
+    class MagicWeapon : Weapon
+    {
+        public MagicWeapon(string _name, int _damage = 10, bool _isTwoHanded = false) : base(_name, _damage, _isTwoHanded) { }
+        public override int Accept(AttackVisitor visitor) => visitor.Visit(this);
+        public override int AcceptDefense(DefenseVisitor visitor) => visitor.Visit(this);
+        public override string getName()
+        {
+            return base.getName() + " (Magic)";
+        }
+    }
+
 
 
 }

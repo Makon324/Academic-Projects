@@ -99,10 +99,9 @@ namespace Gra
             infoLines.Add($"Left Hand: {player.LeftHand?.ToString() ?? "Empty"}");
             infoLines.Add($"Right Hand: {player.RightHand?.ToString() ?? "Empty"}");
 
-            // Current Tile Item
-            IItem? currentItem = map.peekItem(player.getX, player.getY);
+            // Standing on
             infoLines.Add("");
-            infoLines.Add($"Standing On: {currentItem?.ToString() ?? ""}");
+            infoLines.Add($"Standing On: {map.getTileStr(player.getX, player.getY)}");
 
             // Action Log
             infoLines.Add("");

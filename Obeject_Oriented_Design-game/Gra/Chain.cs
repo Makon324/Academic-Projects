@@ -29,6 +29,11 @@ namespace Gra
         public const ConsoleKey DrinkPotion = ConsoleKey.U;
         public const ConsoleKey Attack = ConsoleKey.R;
         public const ConsoleKey DropAll = ConsoleKey.O;
+
+        // Attack
+        public const ConsoleKey NormalAttack = ConsoleKey.N;
+        public const ConsoleKey StealthAttack = ConsoleKey.T;
+        public const ConsoleKey MagicAttack = ConsoleKey.M;
     }
 
     abstract class InputHandler
@@ -203,6 +208,36 @@ namespace Gra
                 return true;
             }
             return base.Handle(key, game);
+        }
+    }
+
+    class CombatHandler : InputHandler
+    {
+        public override bool Handle(ConsoleKeyInfo key, Game game)
+        {
+            AttackType? attackType = null;
+            switch (key.Key)
+            {
+                case KeyBindings.NormalAttack:
+                    attackType = AttackType.Normal;
+                    break;
+                case KeyBindings.StealthAttack:
+                    attackType = AttackType.Stealth;
+                    break;
+                case KeyBindings.MagicAttack:
+                    attackType = AttackType.Magic;
+                    break;
+                default:
+                    return base.Handle(key, game);
+            }
+
+            if (attackType.HasValue)
+            {
+                AttackController.MakeAttack(game.player, game.map, attackType.Value);
+                return true;
+            }
+
+            return false;
         }
     }
 

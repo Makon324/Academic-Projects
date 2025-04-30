@@ -62,6 +62,16 @@ namespace Gra
         {
             return getName() + $" (Damage: {getDamage()})";
         }
+
+        public int Accept(AttackVisitor visitor)
+        {
+            return ((dynamic)baseItem).Accept(visitor);
+        }
+
+        public int AcceptDefense(DefenseVisitor visitor)
+        {
+            return ((dynamic)baseItem).AcceptDefense(visitor);
+        }
     }
 
     class EffectVanish : ItemEffect
@@ -83,6 +93,16 @@ namespace Gra
         {
             return getName() + $" (Damage: {getDamage()})";
         }
+
+        public int Accept(AttackVisitor visitor)
+        {
+            return ((dynamic)baseItem).Accept(visitor);
+        }
+
+        public int AcceptDefense(DefenseVisitor visitor)
+        {
+            return ((dynamic)baseItem).AcceptDefense(visitor);
+        }
     }
 
     /*=======================*/
@@ -95,6 +115,16 @@ namespace Gra
         public WeaponEffect(IWeapon baseItem) : base(baseItem)
         {
             this.baseItem = baseItem;
+        }
+
+        public int Accept(AttackVisitor visitor)
+        {
+            return ((dynamic)baseItem).Accept(visitor);
+        }
+
+        public int AcceptDefense(DefenseVisitor visitor)
+        {
+            return ((dynamic)baseItem).AcceptDefense(visitor);
         }
 
         public virtual int getDamage() => baseItem.getDamage();

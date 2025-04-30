@@ -51,7 +51,7 @@ namespace Gra
             }
         }
 
-        public void SetEnemy(Enemy E)
+        public void SetEnemy(Enemy? E)
         {
             enemy = E;
         }
@@ -141,6 +141,16 @@ namespace Gra
             return tileAviable(x, y) ? grid[x, y].PeekItem() : null;
         }
 
+        public string getTileStr(int x, int y)
+        {
+            if (!tileAviable(x, y))
+                return "";
+
+            if (GetEnemy(x, y) != null)
+                return GetEnemy(x, y).getName();
+            return grid[x, y].PeekItem()?.ToString() ?? "";
+        }
+
         public IItem? extractItem(int x, int y)
         {
             if (tileAviable(x, y))
@@ -158,10 +168,16 @@ namespace Gra
             grid[x, y].putItem(I);
         }
 
-        public void SetEnemy(Enemy E)
-        {
+        public void SetEnemy(Enemy? E)
+        {            
             grid[E.getX, E.getY].SetEnemy(E);
         }
+
+        public void RemoveEnemy(int x, int y)
+        {
+            grid[x, y].SetEnemy(null);
+        }
+
         public Enemy? GetEnemy(int x, int y)
         {
             return grid[x, y].GetEnemy();
