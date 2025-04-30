@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using MiniTest;
+using Moq;
 
 namespace MiniTestRunner
 {
@@ -57,7 +58,7 @@ namespace MiniTestRunner
                                 continue;
                             }
                             else
-                                testMethod.Method.Invoke(instance, new object[] { dataRow.Data[0] });
+                                testMethod.Method.Invoke(instance, dataRow.Data);
 
                             // Execute AfterEach
                             testClass.AfterEach?.Invoke(instance, null);

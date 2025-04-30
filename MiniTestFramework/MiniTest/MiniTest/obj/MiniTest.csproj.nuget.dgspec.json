@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "K:\\Projekty\\academic projects\\MiniTestFramework\\MiniTest\\MiniTest\\MiniTest.csproj": {}
+    "K:\\Projekty\\Academic-Projects\\MiniTestFramework\\MiniTest\\MiniTest\\MiniTest.csproj": {}
   },
   "projects": {
-    "K:\\Projekty\\academic projects\\MiniTestFramework\\MiniTest\\MiniTest\\MiniTest.csproj": {
+    "K:\\Projekty\\Academic-Projects\\MiniTestFramework\\MiniTest\\MiniTest\\MiniTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "K:\\Projekty\\academic projects\\MiniTestFramework\\MiniTest\\MiniTest\\MiniTest.csproj",
+        "projectUniqueName": "K:\\Projekty\\Academic-Projects\\MiniTestFramework\\MiniTest\\MiniTest\\MiniTest.csproj",
         "projectName": "MiniTest",
-        "projectPath": "K:\\Projekty\\academic projects\\MiniTestFramework\\MiniTest\\MiniTest\\MiniTest.csproj",
+        "projectPath": "K:\\Projekty\\Academic-Projects\\MiniTestFramework\\MiniTest\\MiniTest\\MiniTest.csproj",
         "packagesPath": "C:\\Users\\maciek\\.nuget\\packages\\",
-        "outputPath": "K:\\Projekty\\academic projects\\MiniTestFramework\\MiniTest\\MiniTest\\obj\\",
+        "outputPath": "K:\\Projekty\\Academic-Projects\\MiniTestFramework\\MiniTest\\MiniTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

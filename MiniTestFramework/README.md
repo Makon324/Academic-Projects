@@ -14,14 +14,16 @@ Lightweight C# unit test framework + runner. Built for a university course on C#
 [TestClass]
 public class MathTests {
     [TestMethod]
-    [DataRow(4, 2+2)]
+    [DataRow(new object[] { 4, 2 + 2 })]
     public void AddTest(int expected, int actual) {
         Assert.AreEqual(expected, actual);
     }
 }
 ```
 
-2. **Run Tests**:
+2. **Make Sure** to include reference to MiniTest in your tests project's `.csproj`.
+
+3. **Run Tests**:
 ```bash
 MiniTestRunner ./YourTests.dll
 ```
@@ -31,6 +33,8 @@ MiniTestRunner ./YourTests.dll
 - Priority-based execution (`[Priority(1)]`)
 - Setup/teardown methods (`[BeforeEach]`, `[AfterEach]`)
 - Dynamic assembly loading/unloading
+
+
 
 
 

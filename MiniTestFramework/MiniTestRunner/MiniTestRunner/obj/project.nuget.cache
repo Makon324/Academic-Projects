@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "1JStlkrUd9U=",
+  "dgSpecHash": "O/dZnHuQx/M=",
   "success": true,
-  "projectFilePath": "K:\\Projekty\\academic projects\\MiniTestFramework\\MiniTestRunner\\MiniTestRunner\\MiniTestRunner.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "K:\\Projekty\\Academic-Projects\\MiniTestFramework\\MiniTestRunner\\MiniTestRunner\\MiniTestRunner.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\maciek\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\maciek\\.nuget\\packages\\moq\\4.20.72\\moq.4.20.72.nupkg.sha512",
+    "C:\\Users\\maciek\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

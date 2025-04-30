@@ -1,0 +1,12 @@
+K:\Projekty\Academic-Projects\MiniTestFramework\MiniTest\MiniTest\bin\Debug\net8.0\MiniTest.deps.json
+K:\Projekty\Academic-Projects\MiniTestFramework\MiniTest\MiniTest\bin\Debug\net8.0\MiniTest.dll
+K:\Projekty\Academic-Projects\MiniTestFramework\MiniTest\MiniTest\bin\Debug\net8.0\MiniTest.pdb
+K:\Projekty\Academic-Projects\MiniTestFramework\MiniTest\MiniTest\obj\Debug\net8.0\MiniTest.GeneratedMSBuildEditorConfig.editorconfig
+K:\Projekty\Academic-Projects\MiniTestFramework\MiniTest\MiniTest\obj\Debug\net8.0\MiniTest.AssemblyInfoInputs.cache
+K:\Projekty\Academic-Projects\MiniTestFramework\MiniTest\MiniTest\obj\Debug\net8.0\MiniTest.AssemblyInfo.cs
+K:\Projekty\Academic-Projects\MiniTestFramework\MiniTest\MiniTest\obj\Debug\net8.0\MiniTest.csproj.CoreCompileInputs.cache
+K:\Projekty\Academic-Projects\MiniTestFramework\MiniTest\MiniTest\obj\Debug\net8.0\MiniTest.sourcelink.json
+K:\Projekty\Academic-Projects\MiniTestFramework\MiniTest\MiniTest\obj\Debug\net8.0\MiniTest.dll
+K:\Projekty\Academic-Projects\MiniTestFramework\MiniTest\MiniTest\obj\Debug\net8.0\refint\MiniTest.dll
+K:\Projekty\Academic-Projects\MiniTestFramework\MiniTest\MiniTest\obj\Debug\net8.0\MiniTest.pdb
+K:\Projekty\Academic-Projects\MiniTestFramework\MiniTest\MiniTest\obj\Debug\net8.0\ref\MiniTest.dll

@@ -1,12 +1,70 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "K:\\Projekty\\academic projects\\MiniTestFramework\\MiniTestRunner\\",
-  "Documents": [],
+  "WorkspaceRootPath": "K:\\Projekty\\Academic-Projects\\MiniTestFramework\\MiniTestRunner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9237261A-39B9-4A88-9126-29639E110CB5}|MiniTestRunner\\MiniTestRunner.csproj|k:\\projekty\\academic-projects\\minitestframework\\minitestrunner\\minitestrunner\\testrunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9237261A-39B9-4A88-9126-29639E110CB5}|MiniTestRunner\\MiniTestRunner.csproj|solutionrelative:minitestrunner\\testrunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9237261A-39B9-4A88-9126-29639E110CB5}|MiniTestRunner\\MiniTestRunner.csproj|k:\\projekty\\academic-projects\\minitestframework\\minitestrunner\\minitestrunner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9237261A-39B9-4A88-9126-29639E110CB5}|MiniTestRunner\\MiniTestRunner.csproj|solutionrelative:minitestrunner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9237261A-39B9-4A88-9126-29639E110CB5}|MiniTestRunner\\MiniTestRunner.csproj|k:\\projekty\\academic-projects\\minitestframework\\minitestrunner\\minitestrunner\\minitestrunner.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9237261A-39B9-4A88-9126-29639E110CB5}|MiniTestRunner\\MiniTestRunner.csproj|solutionrelative:minitestrunner\\minitestrunner.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MiniTestRunner.csproj",
+              "DocumentMoniker": "K:\\Projekty\\Academic-Projects\\MiniTestFramework\\MiniTestRunner\\MiniTestRunner\\MiniTestRunner.csproj",
+              "RelativeDocumentMoniker": "MiniTestRunner\\MiniTestRunner.csproj",
+              "ToolTip": "K:\\Projekty\\Academic-Projects\\MiniTestFramework\\MiniTestRunner\\MiniTestRunner\\MiniTestRunner.csproj",
+              "RelativeToolTip": "MiniTestRunner\\MiniTestRunner.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-29T20:00:19.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "K:\\Projekty\\Academic-Projects\\MiniTestFramework\\MiniTestRunner\\MiniTestRunner\\Program.cs",
+              "RelativeDocumentMoniker": "MiniTestRunner\\Program.cs",
+              "ToolTip": "K:\\Projekty\\Academic-Projects\\MiniTestFramework\\MiniTestRunner\\MiniTestRunner\\Program.cs",
+              "RelativeToolTip": "MiniTestRunner\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:56:35.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestRunner.cs",
+              "DocumentMoniker": "K:\\Projekty\\Academic-Projects\\MiniTestFramework\\MiniTestRunner\\MiniTestRunner\\TestRunner.cs",
+              "RelativeDocumentMoniker": "MiniTestRunner\\TestRunner.cs",
+              "ToolTip": "K:\\Projekty\\Academic-Projects\\MiniTestFramework\\MiniTestRunner\\MiniTestRunner\\TestRunner.cs",
+              "RelativeToolTip": "MiniTestRunner\\TestRunner.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAD4vxMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:56:17.803Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
