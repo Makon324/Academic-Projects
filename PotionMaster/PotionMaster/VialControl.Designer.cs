@@ -35,6 +35,9 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Name = "VialControl";
+            Load += VialControl_Load;
+            DragDrop += VialControl_DragDrop;
+            DragEnter += VialControl_DragEnter;
             MouseDown += VialControl_MouseDown;
             ResumeLayout(false);
         }

@@ -62,12 +62,19 @@ namespace PotionMaster
             InitSegments();
             this.AllowDrop = true;
             this.MouseDown += VialControl_MouseDown;            
+            this.DragEnter += VialControl_DragEnter;
+            this.DragDrop += VialControl_DragDrop;
         }
 
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
             Invalidate(); // Force redraw on resize
+        }
+
+        private void VialControl_Load(object sender, EventArgs e)
+        {
+            //
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -94,7 +101,7 @@ namespace PotionMaster
             // Adjust the outer rectangle to account for the border's inner half
             var outer = new RectangleF(
                 x + halfPen,
-                y + 2.5f*halfPen,
+                y + 14f,
                 vialWidth - halfPen,
                 vialHeight);
 
@@ -108,7 +115,9 @@ namespace PotionMaster
 
 
                 // setting clip
+
                 GraphicsPath clipPath = new GraphicsPath();
+
                 clipPath.StartFigure();
 
                 // Rectangle sides
@@ -133,7 +142,7 @@ namespace PotionMaster
                 // Draw segments
                 if (MaxSegments > 0 && Segments.Count > 0)
                 {
-                    int segmentHeight = ((int)vialHeight - 3*_borderWidth) / MaxSegments;
+                    int segmentHeight = 167 / MaxSegments;
                     for (int i = 0; i < Segments.Count && i < MaxSegments; i++)
                     {
                         using (SolidBrush brush = new SolidBrush(Segments[i]))
@@ -240,6 +249,18 @@ namespace PotionMaster
             data.SetData("Quantity", quant);
             DoDragDrop(data, DragDropEffects.Move);
         }
+
+        private void VialControl_DragEnter(object sender, DragEventArgs e)
+        {
+
+        }
+
+        private void VialControl_DragDrop(object sender, DragEventArgs e)
+        {
+
+        }
+
+
 
 
 

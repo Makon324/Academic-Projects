@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\PotionMaster.csproj": {}
+    "K:\\Projekty\\Academic-Projects\\PotionMaster\\PotionMaster\\PotionMaster.csproj": {}
   },
   "projects": {
-    "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\PotionMaster.csproj": {
+    "K:\\Projekty\\Academic-Projects\\PotionMaster\\PotionMaster\\PotionMaster.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\PotionMaster.csproj",
+        "projectUniqueName": "K:\\Projekty\\Academic-Projects\\PotionMaster\\PotionMaster\\PotionMaster.csproj",
         "projectName": "PotionMaster",
-        "projectPath": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\PotionMaster.csproj",
+        "projectPath": "K:\\Projekty\\Academic-Projects\\PotionMaster\\PotionMaster\\PotionMaster.csproj",
         "packagesPath": "C:\\Users\\maciek\\.nuget\\packages\\",
-        "outputPath": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\obj\\",
+        "outputPath": "K:\\Projekty\\Academic-Projects\\PotionMaster\\PotionMaster\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

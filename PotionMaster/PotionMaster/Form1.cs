@@ -5,24 +5,124 @@
         private Stack<Move> moveHistory = new Stack<Move>();
         private int currentScore = 0;
         private int totalUndos;
+        private int usedUndos;
+
+        private readonly ColorPreset LightPreset = new ColorPreset(
+            Color.White,
+            Color.FromKnownColor(KnownColor.Control),
+            Color.Black,
+            Color.Pink
+        );
+
+        private readonly ColorPreset DarkPreset = new ColorPreset(
+            Color.FromArgb(60, 60, 60),
+            Color.FromArgb(100, 100, 100),
+            Color.White,
+            Color.Pink
+        );
 
         public Form1()
         {
             InitializeComponent();
+            ApplyTheme();
+            InitializeNewGame();
+            GenerateNewPuzzle();
+            UpdateScore();
+            UpdateUndoState();
+        }
 
-            // Initialize theme based on settings
-            string colorTheme = Properties.Settings.Default.ColorTheme;
-            Theme.SetTheme(colorTheme == "Dark" ? Theme.DarkPreset : Theme.LightPreset);
-            Theme.ApplyTheme(this);
+        private void tablePotionLayout_Paint(object sender, PaintEventArgs e)
+        {
 
-            // Apply menu renderer
-            menuStrip1.Renderer = Theme.CreateMenuRenderer();
-
-            StartNewGame(true);
         }
 
 
-        // POURING ----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        private void vialControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vialControl2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vialControl3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vialControl4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// /
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// 
+        private void vialControl1_DragEnter(object sender, DragEventArgs e)
+        {
+            HandleDragEnter(sender, e);
+        }
+
+        private void vialControl1_DragDrop(object sender, DragEventArgs e)
+        {
+            HandleDragDrop(sender, e);
+        }
+
+        private void vialControl2_DragDrop(object sender, DragEventArgs e)
+        {
+            HandleDragDrop(sender, e);
+        }
+
+        private void vialControl2_DragEnter(object sender, DragEventArgs e)
+        {
+            HandleDragEnter(sender, e);
+        }
+
+        private void vialControl3_DragDrop(object sender, DragEventArgs e)
+        {
+            HandleDragDrop(sender, e);
+        }
+
+        private void vialControl3_DragEnter(object sender, DragEventArgs e)
+        {
+            HandleDragEnter(sender, e);
+        }
+
+        private void vialControl4_DragDrop(object sender, DragEventArgs e)
+        {
+            HandleDragDrop(sender, e);
+        }
+
+        private void vialControl4_DragEnter(object sender, DragEventArgs e)
+        {
+            HandleDragEnter(sender, e);
+        }
+
+
 
         private void HandleDragEnter(object sender, DragEventArgs e)
         {
@@ -74,34 +174,67 @@
             }
         }
 
-
-        // NEW GAME/PUZZLE LOGIC ----------------------
-
-        private void StartNewGame(bool resetScore)
+        private void buttonUndo_Click(object sender, EventArgs e)
         {
-            // Set score/undos
-            if (resetScore)
-            {
-                currentScore = 0;
-                totalUndos = Properties.Settings.Default.Difficulty switch
-                {
-                    "Easy" => 3,
-                    "Medium" => 2,
-                    "Hard" => 1,
-                    _ => 3
-                };
-            }
-            moveHistory.Clear();
+            if (totalUndos <= 0 || moveHistory.Count == 0) return;
 
-            // Start new puzzle
-            GenerateNewPuzzle();            
+            var move = moveHistory.Pop();
+            move.Target.RemoveSegments(move.Quantity);
+            move.Source.Pour(move.Color, move.Quantity);
+            totalUndos--;
+            UpdateUndoState();
+            CheckCompletion();
+        }
+
+
+        private void UpdateUndoState()
+        {
+            buttonUndo.Enabled = totalUndos > 0 && moveHistory.Count > 0;
+            labelUndosLeft.Text = $"Left: {totalUndos}";
+        }
+
+        private void buttonNextPuzzle_Click(object sender, EventArgs e)
+        {
+            // Reset game state
             labelCongratulations.Visible = false;
             buttonNextPuzzle.Enabled = false;
             UpdateUndoState();
+            GenerateNewPuzzle();
             UpdateScore();
         }
 
-        private bool isPuzzleCompleted()
+        private int CalculatePuzzleScore()
+        {
+            int difficultyScore = Properties.Settings.Default.Difficulty switch
+            {
+                "Easy" => 1,
+                "Medium" => 2,
+                "Hard" => 3,
+                _ => 1
+            };
+            int maxSegments = Properties.Settings.Default.MaxSegments;
+            int vialCount = Properties.Settings.Default.VialCount;
+            int emptyVials = GetEmptyVialCount(Properties.Settings.Default.Difficulty);
+
+            return difficultyScore * maxSegments * (vialCount - emptyVials);
+        }
+
+        private void UpdateScore()
+        {
+            labelScore.Text = $"Score: {currentScore}";
+            labelBestScore.Text = $"Best Score: {Properties.Settings.Default.BestScore}";
+        }
+
+        private void SaveBestIfNeeded()
+        {
+            if (currentScore > Properties.Settings.Default.BestScore)
+            {
+                Properties.Settings.Default.BestScore = currentScore;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void CheckCompletion()
         {
             bool allValid = true;
             foreach (Control c in tablePotionLayout.Controls)
@@ -122,19 +255,26 @@
                         break;
                     }
                 }
-            }
-            return allValid;
-        }
 
-        private void CheckCompletion()
-        {
-            bool allValid = isPuzzleCompleted();
+            }
 
             labelCongratulations.Visible = allValid;
             labelCongratulations.Enabled = allValid;
             buttonNextPuzzle.Enabled = allValid;
             if (allValid) currentScore += CalculatePuzzleScore();
             UpdateScore();
+        }
+
+        private void InitializeNewGame()
+        {
+            totalUndos = Properties.Settings.Default.Difficulty switch
+            {
+                "Easy" => 3,
+                "Medium" => 2,
+                "Hard" => 1,
+                _ => 3
+            };
+            moveHistory.Clear();
         }
 
         private void GenerateNewPuzzle()
@@ -188,8 +328,8 @@
                 // Set fixed size and centering properties
                 vial.Size = new Size(100, 200);
                 vial.Anchor = AnchorStyles.None;
-                vial.Dock = DockStyle.None;
-                vial.Margin = new Padding(0);
+                vial.Dock = DockStyle.None; 
+                vial.Margin = new Padding(0); 
 
                 // Add to table layout with row/column positioning
                 tablePotionLayout.Controls.Add(vial, i % columns, i / columns);
@@ -202,83 +342,87 @@
                 vial.DragDrop += HandleDragDrop;
             }
 
-            // Set minimum form size
+            // Calculate minimum form size
             int minWidth = 100 * columns;
             int minHeight = 260 * rows + 80;
+
             this.MinimumSize = new Size(minWidth, minHeight);
-
-            if (isPuzzleCompleted())
-                GenerateNewPuzzle();
-        }
-
-        private void buttonNextPuzzle_Click(object sender, EventArgs e)
-        {
-            StartNewGame(false);
-            currentScore += CalculatePuzzleScore();
-            UpdateScore();
-        }
-
-        private void newGameToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            StartNewGame(true);
-        }
-
-        private void endGameToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SaveBestIfNeeded();
-            StartNewGame(true);
         }
 
 
-        // ----------------------
 
-        private void buttonUndo_Click(object sender, EventArgs e)
+
+        private void openSettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (totalUndos <= 0 || moveHistory.Count == 0) return;
 
-            var move = moveHistory.Pop();
-            move.Target.RemoveSegments(move.Quantity);
-            move.Source.Pour(move.Color, move.Quantity);
-            totalUndos--;
-            UpdateUndoState();
-            CheckCompletion();
         }
 
-        private void UpdateUndoState()
+        private void ApplyTheme()
         {
-            buttonUndo.Enabled = totalUndos > 0 && moveHistory.Count > 0;
-            labelUndosLeft.Text = $"Left: {totalUndos}";
+            var theme = Properties.Settings.Default.ColorTheme.Equals("Dark", StringComparison.OrdinalIgnoreCase)
+                ? DarkPreset
+                : LightPreset;
+
+            // Apply to entire form and controls
+            this.BackColor = theme.Background;
+            this.ForeColor = theme.Text;
+            ApplyThemeToControls(this.Controls, theme);
+
+            // Apply to MenuStrip
+            menuStrip1.BackColor = theme.Background;
+            menuStrip1.ForeColor = theme.Text;
+            menuStrip1.RenderMode = ToolStripRenderMode.Professional;
+            menuStrip1.Renderer = new ThemedMenuRenderer(
+                theme.Accent,      
+                theme.Background,  
+                theme.Text        
+            );
         }
 
-        private int CalculatePuzzleScore()
+
+
+
+        private void ApplyThemeToControls(Control.ControlCollection controls, ColorPreset theme)
         {
-            int difficultyScore = Properties.Settings.Default.Difficulty switch
+            foreach (Control control in controls)
             {
-                "Easy" => 1,
-                "Medium" => 2,
-                "Hard" => 3,
-                _ => 1
-            };
-            int maxSegments = Properties.Settings.Default.MaxSegments;
-            int vialCount = Properties.Settings.Default.VialCount;
-            int emptyVials = GetEmptyVialCount(Properties.Settings.Default.Difficulty);
+                if (control is Button btn)
+                {
+                    btn.BackColor = theme.Button;
+                    btn.ForeColor = theme.Text;
+                }
+                else if (control is Label lbl)
+                {
+                    lbl.ForeColor = theme.Text;
+                }
+                else if (control is Panel || control is TableLayoutPanel)
+                {
+                    control.BackColor = theme.Background;
+                    control.ForeColor = theme.Text;
+                }
 
-            return difficultyScore * maxSegments * (vialCount - emptyVials);
-        }
-
-        private void UpdateScore()
-        {
-            labelScore.Text = $"Score: {currentScore}";
-            labelBestScore.Text = $"Best Score: {Properties.Settings.Default.BestScore}";
-        }
-
-        private void SaveBestIfNeeded()
-        {
-            if (currentScore > Properties.Settings.Default.BestScore)
-            {
-                Properties.Settings.Default.BestScore = currentScore;
-                Properties.Settings.Default.Save();
+                if (control.HasChildren)
+                {
+                    ApplyThemeToControls(control.Controls, theme);
+                }
             }
+        }
+
+
+        private List<Color> GenerateDistinctColors(int count)
+        {
+            List<Color> colors = new List<Color>();
+            double goldenRatioConjugate = 0.618033988749895;
+
+            for (int i = 0; i < count; i++)
+            {
+                float hue = (float)((i * goldenRatioConjugate * 360) % 360);
+                float saturation = 0.85f;
+                float lightness = 0.55f;
+
+                colors.Add(HSLToRGB(hue, saturation, lightness));
+            }
+            return colors;
         }
 
         private int GetEmptyVialCount(string difficulty)
@@ -332,22 +476,6 @@
             );
         }
 
-        private List<Color> GenerateDistinctColors(int count)
-        {
-            List<Color> colors = new List<Color>();
-            double goldenRatioConjugate = 0.618033988749895;
-
-            for (int i = 0; i < count; i++)
-            {
-                float hue = (float)((i * goldenRatioConjugate * 360) % 360);
-                float saturation = 0.85f;
-                float lightness = 0.55f;
-
-                colors.Add(HSLToRGB(hue, saturation, lightness));
-            }
-            return colors;
-        }
-
         private void openSettingsToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             string originalDifficulty = Properties.Settings.Default.Difficulty;
@@ -362,9 +490,7 @@
 
                 if (settingsForm.ShowDialog() == DialogResult.OK)
                 {
-                    Theme.SetTheme(Properties.Settings.Default.ColorTheme == "Dark" ? Theme.DarkPreset : Theme.LightPreset);
-                    Theme.ApplyTheme(this);
-                    menuStrip1.Renderer = Theme.CreateMenuRenderer();
+                    ApplyTheme();
 
                     // Check if game-relevant settings changed (exclude ColorTheme)
                     bool gameSettingsChanged =
@@ -374,15 +500,47 @@
 
                     if (gameSettingsChanged)
                     {
-                        if (gameSettingsChanged)
-                        {
-                            StartNewGame(true);
-                        }
+                        InitializeNewGame();
+                        GenerateNewPuzzle();
+                        currentScore = 0;
+                        UpdateScore();
+                        moveHistory.Clear();
+                        UpdateUndoState();
+                        labelCongratulations.Visible = false;
+                        buttonNextPuzzle.Enabled = false;
                     }
                 }
             }
         }
 
+        private void newGameToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            InitializeNewGame();
+            GenerateNewPuzzle();
+            currentScore = 0;
+            UpdateScore();
+            labelCongratulations.Visible = false;
+            buttonNextPuzzle.Enabled = false;
+            moveHistory.Clear();
+            UpdateUndoState();
+        }
+
+        private void endGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // On End Game: save best score if needed
+            UpdateScore();
+            SaveBestIfNeeded();
+
+            // Then reset game state
+            InitializeNewGame();
+            GenerateNewPuzzle();
+            currentScore = 0;
+            UpdateScore();
+            labelCongratulations.Visible = false;
+            buttonNextPuzzle.Enabled = false;
+            moveHistory.Clear();
+            UpdateUndoState();
+        }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -398,5 +556,92 @@
         public int Quantity { get; set; }
     }
 
-    
+    class ColorPreset
+    {
+        public Color Background { get; }
+        public Color Button { get; }
+        public Color Text { get; }
+        public Color Accent { get; }
+
+        public ColorPreset(Color background, Color button, Color text, Color accent)
+        {
+            Background = background;
+            Button = button;
+            Text = text;
+            Accent = accent;
+        }
+    }
+
+    public class ThemeColorTable : ProfessionalColorTable
+    {
+        readonly Color _accent, _background;
+        public ThemeColorTable(Color accent, Color background)
+        {
+            _accent = accent;
+            _background = background;
+        }
+
+        // menu-bar background
+        public override Color ToolStripGradientBegin => _background;
+        public override Color ToolStripGradientMiddle => _background;
+        public override Color ToolStripGradientEnd => _background;
+
+        // dropdown background
+        public override Color ToolStripDropDownBackground
+            => _background;
+
+        // hover/pressed highlight
+        public override Color MenuItemSelected
+            => _accent;
+        public override Color MenuItemSelectedGradientBegin
+            => _accent;
+        public override Color MenuItemSelectedGradientEnd
+            => _accent;
+        public override Color MenuItemPressedGradientBegin
+            => _accent;
+        public override Color MenuItemPressedGradientMiddle
+            => _accent;
+        public override Color MenuItemPressedGradientEnd
+            => _accent;
+
+    }
+
+    public class ThemedMenuRenderer : ToolStripProfessionalRenderer
+    {
+        private readonly Color _text, _background;
+
+        public ThemedMenuRenderer(Color accent, Color background, Color text)
+            : base(new ThemeColorTable(accent, background))
+        {
+            _text = text;
+            _background = background;
+        }
+
+        // paint the entire drop-down background
+        protected override void OnRenderToolStripBackground(ToolStripRenderEventArgs e)
+        {
+            e.Graphics.FillRectangle(
+                new SolidBrush(_background),
+                e.AffectedBounds
+            );
+        }
+
+        // left icon-margin in the same background
+        protected override void OnRenderImageMargin(ToolStripRenderEventArgs e)
+        {
+            e.Graphics.FillRectangle(
+                new SolidBrush(_background),
+                e.AffectedBounds
+            );
+        }
+
+        // force *all* menu-item text to theme color
+        protected override void OnRenderItemText(ToolStripItemTextRenderEventArgs e)
+        {
+            e.TextColor = _text;
+            base.OnRenderItemText(e);
+        }
+
+
+    }
 }

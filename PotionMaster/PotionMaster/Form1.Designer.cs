@@ -119,6 +119,7 @@
             tablePotionLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tablePotionLayout.Size = new Size(784, 357);
             tablePotionLayout.TabIndex = 1;
+            tablePotionLayout.Paint += tablePotionLayout_Paint;
             // 
             // controlPanel
             // 

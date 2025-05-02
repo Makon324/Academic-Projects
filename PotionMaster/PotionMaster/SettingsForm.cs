@@ -17,6 +17,21 @@ namespace PotionMaster
         private int originalVialCount;
         private string originalColorTheme;
 
+        private ColorPreset CurrentTheme =>
+            Properties.Settings.Default.ColorTheme == "Light"
+                ? new ColorPreset(
+                    Color.White,
+                    Color.FromKnownColor(KnownColor.Control),
+                    Color.Black,
+                    Color.Pink
+                  )
+                : new ColorPreset(
+                    Color.FromArgb(60, 60, 60),
+                    Color.FromArgb(100, 100, 100),
+                    Color.White,
+                    Color.Pink
+                  );
+
         public SettingsForm()
         {
             InitializeComponent();
@@ -43,7 +58,17 @@ namespace PotionMaster
                 case "Dark": radioDark.Checked = true; break;
             }
 
-            Theme.ApplyTheme(this); // Apply theme after loading settings
+            ApplyTheme(); // Apply theme after loading settings
+        }
+
+
+
+
+
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -107,5 +132,46 @@ namespace PotionMaster
         }
 
 
+        private void ApplyTheme()
+        {
+            var theme = CurrentTheme;
+
+            // Apply to entire form
+            this.BackColor = theme.Background;
+            this.ForeColor = theme.Text;
+
+            // Apply to all child controls
+            ApplyThemeToControls(this.Controls, theme);
+        }
+
+        private void ApplyThemeToControls(Control.ControlCollection controls, ColorPreset theme)
+        {
+            foreach (Control c in controls)
+            {
+                // Set background for panels/layouts
+                if (c is Panel || c is TableLayoutPanel || c is GroupBox)
+                {
+                    c.BackColor = theme.Background;
+                    c.ForeColor = theme.Text;
+                }
+                // Style buttons
+                else if (c is Button btn)
+                {
+                    btn.BackColor = theme.Button;
+                    btn.ForeColor = theme.Text;
+                }
+                // Style labels
+                else if (c is Label lbl)
+                {
+                    lbl.ForeColor = theme.Text;
+                }
+
+                // Recurse into child controls
+                if (c.HasChildren)
+                {
+                    ApplyThemeToControls(c.Controls, theme);
+                }
+            }
+        }
     }
 }

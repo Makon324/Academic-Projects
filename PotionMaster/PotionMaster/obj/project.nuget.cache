@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5nh7qKRnMu8=",
+  "dgSpecHash": "/uxGOyTYNCo=",
   "success": true,
-  "projectFilePath": "K:\\Studia\\SemIV\\ProgGraf\\PwSG_25L_01189135_WinForms-Lab2\\PotionMaster\\PotionMaster\\PotionMaster.csproj",
+  "projectFilePath": "K:\\Projekty\\Academic-Projects\\PotionMaster\\PotionMaster\\PotionMaster.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\maciek\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
     "C:\\Users\\maciek\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
